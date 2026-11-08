@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="login.css">
+    <title>LOGIN</title>
+</head>
+<body>
+    
+    <div id="main-container">
+    <h1>
+        LOGIN
+    </h1>
+    <form action="">
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" placeholder="Digite seu e-mail" autocomplete="off">
+        <label for="password">Senha</label>
+        <input type="password" name="Password" id="password" placeholder="Digite sua senha">
+        <button id="buttonent" onclick="pegarsenha()">Entrar</button>
+        <a href="#" id="forgot-pass">Esqueceu a senha?</a>
+        <a href="#"></a input type="submit" value="LOGIN"></a>
+
+    </form>
+<div id="Register-container">
+    <h3>Ainda Não tem uma conta?</h3>
+    <p>Peça para os setores de TI ou RH</p>
+    <p>Criarem o seu usuário</p>
+
+</div>
+</div>
+    <script type="module">
+        const email = document.getElementById('email');
+        const emailTXT = email.value;
+
+        const senha = document.getElementById('password');
+
+        let useremail;
+        let userpass;
+
+        document.getElementById('buttonent').onclick = function() {
+            useremail = document.getElementById('email').value;
+            userpass = document.getElementById('password').value;
+
+
+            if (useremail == "admin" && userpass == "1234"){
+                window.location.href = "start.html";
+            }else{
+                alert("Senha incorreta");
+            }
+            
+        }  
+
+        export let user = "Admin"; 
+
+    </script>
+
+</body>
+</html>

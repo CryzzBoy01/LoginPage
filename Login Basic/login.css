@@ -1,0 +1,218 @@
+/* reset padrão css*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+    font-family: helvetica;
+    color: #000000;
+    border: none;
+    margin-bottom: 10px;
+    padding-left: 2px;
+    padding-right: 2px;
+
+}
+
+* { box-sizing: border-box; margin: 0;}
+  :root {
+    --navy: #0B2545;
+    --navy-mid: #1B3A6B;
+    --navy-light: #2A5298;
+    --teal: #1D9E75;
+    --teal-light: #5DCAA5;
+    --teal-xlight: #E1F5EE;
+    --sidebar-w: 200px;
+}
+
+
+input {
+    color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5ps;
+    border-radius: 10px;
+}
+
+
+/*  Edição dos elementos do body */
+
+body{
+    background-color: var(--navy);
+    background-size:cover ;
+    text-align: center;
+}
+
+#main-container {
+    background-color: var(--teal-xlight);
+    padding-bottom: 15px;
+    margin-top: 25vh;
+    border: solid 20px var(--teal-xlight);
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    text-align: center;
+}
+
+h1{
+    color: #0095ff;
+    letter-spacing: 3px;
+    font-weight: 900;
+    
+}
+
+textarea,input:focus{
+     outline: none;
+    
+}
+
+a,label{
+    font-size: 1rem;
+}
+
+a:hover {
+    color: #08558b;
+    cursor: crosshair;
+}
+
+label,input {
+    display: block;
+    width: 100%;
+    text-align: left;
+
+}
+
+label {
+    font-weight:bold;
+}
+
+input{
+    background-color: #c3ffe7;
+    border-bottom: 4px solid #323232;
+    padding: 8px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    transition: 0.5s;
+
+}
+
+input::placeholder {
+  color: #000000;
+}
+
+input,h1{
+padding-top: 10px;
+}
+
+input:focus{
+    border-bottom: 6px solid #1D9E75;
+    background-color: #65ffcefb;
+    transition: 0.5s;
+}
+
+i{
+    cursor: pointer;
+}
+
+#forgot-pass{
+    text-align: center;
+    display: block;
+    cursor: pointer;
+}
+
+#reg-bots{
+    cursor: pointer;
+}
+
+#forgot-pass{
+    margin-top: 30px;
+}
+#password{
+    margin-bottom: 30px;
+}
+
+button{
+    transition: 0.5s;
+    background-color: var(--teal-xlight);
+    padding: 0.75em 1.5em;
+    border: solid 3px #1D9E75;
+    color: #1D9E75;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 800;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: auto;
+    text-shadow: 0 0 5px #1D9E75;
+    box-shadow:
+    0 0 10px #1D9E75,
+    0 0 20px #1D9E75;
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+button:after, button:before{
+    content: '';
+    position: absolute;
+    background-color: #1D9E75;
+    height: 70%;
+    width: 50%;
+    opacity: 0.2;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+button:before{
+    animation: pulse 2s ease-out infinite;
+}
+
+button:after{
+    animation: pulse 2s 1s ease-out infinite;
+}
+
+@keyframes pulse {
+    100% {
+        transform: scale(3);
+        opacity: 0;
+    }
+}
+
+button:hover{
+    transition: 0.5s;
+    background-color: #1D9E75;
+    padding: 0.75em 2em;
+    border: solid 3px #1D9E75;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 900;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: auto;
+    text-shadow: 0 0 5px #1D9E75;
+    box-shadow:
+    0 0 10px #1D9E75,
+    0 0 20px #1D9E75;
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+button:after:hover, button:before:hover{
+    content: '';
+    position: absolute;
+    background-color: #1D9E75;
+    height: 100%;
+    width: 60%;
+    opacity: 0.2;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+button:before{
+    animation: pulse 2s ease-out infinite;
+}
+
+button:after{
+    animation: pulse 2s 1s ease-out infinite;
+}
